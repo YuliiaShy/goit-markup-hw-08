@@ -1,25 +1,25 @@
-.modal-button {
-  padding: 10px 32px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+// .modal-button {
+//   padding: 10px 32px;
+//   display: block;
+//   margin-right: auto;
+//   margin-left: auto;
 
-  font-family: var(--font-family-roboto);
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--hero-headline-color);
-  background-color: var(--accent-color-blue);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+//   font-family: var(--font-family-roboto);
+//   font-weight: 700;
+//   line-height: 1.87;
+//   letter-spacing: 0.06em;
+//   color: var(--hero-headline-color);
+//   background-color: var(--accent-color-blue);
+//   border: none;
+//   border-radius: 4px;
+//   cursor: pointer;
+//   transition-property: background-color;
+//   transition-duration: var(--transition-duration);
+//   transition-timing-function: var(--transition-timing-function);
 
-  &:hover,
-  &:focus {
-  background-color: var(--hero-button-hover);
-}
-}
+//   &:hover,
+//   &:focus {
+//   background-color: var(--hero-button-hover);
+// }
+// }
 
