@@ -1,0 +1,30 @@
+body {
+  font-family: var(--font-family-body), sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--general-text-color);
+  background-color: var(--general-background-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}

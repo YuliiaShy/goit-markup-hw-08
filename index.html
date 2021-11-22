@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Студия web дизайна в Киеве" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+<body>
+  <header class="page-header">
+      <div class="page-header__container container">
+          <a class="logo page-header__logo" href="./index.html"
+            >Web<span class="page-header__logo_black">Studio</span></a
+          >
+           <button class="button-menu" type="button" data-menu-open>
+          <svg class="button-menu__icon" >
+            <use href="./images/icons.svg.svg#burger-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <button class="mobile-menu__button" data-menu-close>
+          <svg class="mobile-menu__icon" >
+            <use href="./images/icons.svg.svg#close-icon"></use>
+          </svg>
+        </button>
+        
+          <ul class="menu-nav">
+            <li class="menu-nav__item">
+              <a
+                class="menu-nav__link menu-nav__link_current"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        
+        <ul class="menu-contacts">
+           <li class="menu-contacts__item">
+            <a class="menu-contacts__link menu-contacts__link_tel" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link menu-contacts__link_mail" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+         
+        </ul>
+        <ul class="menu-social">
+          <li class="menu-social__item">
+              <a class="menu-social__link" href="">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link" href="">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link" href="">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link" href="">LinkedIn</a>
+            </li>
+        </ul>
+      </div>
+          </div>
+  </header>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
