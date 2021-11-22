@@ -124,15 +124,15 @@ a {
 }
 
 .page-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--header-border-color);
 }
 
 @media screen and (min-width: 768px) {
   .page-header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -156,6 +156,13 @@ a {
   line-height: 0;
   background-color: transparent;
   color: var(--logo-span-color);
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.button-menu:hover, .button-menu:focus {
+  color: var(--accent-color-blue);
 }
 
 @media screen and (min-width: 768px) {
@@ -228,16 +235,9 @@ a {
   font-family: var(--font-family-body);
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.175;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--headline-text-color);
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-
-.menu-nav__link:hover, .menu-nav__link:focus {
-  color: var(--accent-color-blue);
 }
 
 .menu-nav__link_current {
@@ -245,10 +245,22 @@ a {
 }
 
 .menu-contacts__link_tel {
+  margin-bottom: 32px;
+  font-family: var(--font-family-body);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   color: var(--accent-color-blue);
 }
 
 .menu-contacts__link_mail {
+  margin-bottom: 64px;
+  font-family: var(--font-family-body);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   color: var(--general-text-color);
 }
 
@@ -256,11 +268,18 @@ a {
   display: flex;
 }
 
-.menu-social__item {
+.menu-social__item:not(:last-child) {
   margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid var(--input-rgba);
 }
 
 .menu-social__link {
+  font-family: var(--font-family-body);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
   color: var(--accent-color-blue);
 }
 /*# sourceMappingURL=main.css.map */
