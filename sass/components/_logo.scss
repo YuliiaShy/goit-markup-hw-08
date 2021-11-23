@@ -6,11 +6,15 @@
   color: var(--accent-color-blue);
 }
 
-// .page-header__logo {
-//  margin-right: 93px;
-//   padding-top: 24px;
-//   padding-bottom: 25px;   
-// }
+.page-header__logo {
+@media screen and (min-width: 768px) {
+  margin-right: 88px;  
+  }
+
+  @media screen and (min-width: 1200px) {
+  margin-right: 93px;  
+  }  
+}
 
 .page-header__logo_black {
   color: var(--logo-span-color);
