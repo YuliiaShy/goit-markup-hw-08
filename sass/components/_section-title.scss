@@ -1,10 +1,15 @@
-// .section-title {
-//   margin-right: auto;
-//   margin-left: auto;
-//   margin-bottom: 50px;
+.section-title {
+  text-align: center; 
+  margin-bottom: var(--card-set-gap);
 
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.16;
-//   color: var(--headline-text-color);
-// }
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  color: var(--headline-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
