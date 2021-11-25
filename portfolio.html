@@ -22,21 +22,16 @@
   </head>
   <body>
     <!-- header -->
-    <header class="page-header">
+<header class="page-header">
       <div class="page-header__container container">
-        <nav class="page-header__nav">
-          <a class="logo page-header__logo" href="./index.html"
-            >Web<span class="page-header__logo_black">Studio</span></a
-          >
+        <a class="logo page-header__logo" href="./index.html">Web<span class="page-header__logo_black">Studio</span></a>
+        <nav>
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a
-                class="site-nav__link"
-                href="./index.html"
-                >Студия</a>
+              <a class="site-nav__link site-nav__link_current" href="./index.html">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link_current" href="./portfolio.html">Портфолио</a>
+              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="">Контакты</a>
@@ -61,6 +56,11 @@
             >
           </li>
         </ul>
+        <button class="button-menu" type="button" data-menu-open>
+          <svg class="button-menu__icon">
+            <use href="./images/icons.svg.svg#burger-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- main -->
@@ -69,21 +69,21 @@
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="buttons-list">
-            <li class="btn-item">
+            <li class="buttons-list__item">
               <button class="btn-filter button-active" type="button">
                 Все
               </button>
             </li>
-            <li class="btn-item">
+            <li class="buttons-list__item">
               <button class="btn-filter" type="button">Веб-сайты</button>
             </li>
-            <li class="btn-item">
+            <li class="buttons-list__item">
               <button class="btn-filter" type="button">Приложения</button>
             </li>
-            <li class="btn-item">
+            <li class="buttons-list__item">
               <button class="btn-filter" type="button">Дизайн</button>
             </li>
-            <li class="btn-item">
+            <li class="buttons-list__item">
               <button class="btn-filter" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -91,13 +91,47 @@
             <li class="examples-item">
               <a class="examples-link" href="">
                 <div class="examples-overlay">
-                  <img
+                  <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-1-desktop.webp 1x,
+                   ./images/portfolio/works-1-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-1-desktop.jpg 1x,
+                   ./images/portfolio/works-1-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-1-tablet.webp 1x,
+                   ./images/portfolio/works-1-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-1-tablet.jpg 1x,
+                   ./images/portfolio/works-1-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-1.webp 1x,
+                   ./images/portfolio/works-1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-1.jpg 1x,
+                   ./images/portfolio/works-1@2x.jpg 2x"
+                />
+                <img
                     class="examples-img"
-                    src="./images/portfolio1.jpg"
+                    src="#"
                     alt="Веб-сайт на экране ноутбука"
-                    width="370"
                   />
-                  <p class="examples-overlay-text">
+              </picture>
+                   <p class="examples-overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -112,12 +146,46 @@
             <li class="examples-item">
               <a class="examples-link" href="">
                 <div class="examples-overlay">
-                  <img
+                   <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-2-desktop.webp 1x,
+                   ./images/portfolio/works-2-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-2-desktop.jpg 1x,
+                   ./images/portfolio/works-2-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-2-tablet.webp 1x,
+                   ./images/portfolio/works-2-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-2-tablet.jpg 1x,
+                   ./images/portfolio/works-2-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-2.webp 1x,
+                   ./images/portfolio/works-2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-2.jpg 1x,
+                   ./images/portfolio/works-2@2x.jpg 2x"
+                />
+                <img
                     class="examples-img"
-                    src="./images/portfolio2.jpg"
+                    src="#"
                     alt="Два баскетболиста с мячом"
-                    width="370"
                   />
+              </picture>
                   <p class="examples-overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -135,12 +203,46 @@
             <li class="examples-item">
               <a class="examples-link" href="">
                 <div class="examples-overlay">
-                  <img
+                   <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-3-desktop.webp 1x,
+                   ./images/portfolio/works-3-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-3-desktop.jpg 1x,
+                   ./images/portfolio/works-3-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-3-tablet.webp 1x,
+                   ./images/portfolio/works-3-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-3-tablet.jpg 1x,
+                   ./images/portfolio/works-3-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-3.webp 1x,
+                   ./images/portfolio/works-3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-3.jpg 1x,
+                   ./images/portfolio/works-3@2x.jpg 2x"
+                />
+                <img
                     class="examples-img"
-                    src="./images/portfolio3.jpg"
+                    src="#"
                     alt="Акула и название ресторана"
-                    width="370"
                   />
+              </picture>
                   <p class="examples-overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -158,11 +260,44 @@
             <li class="examples-item">
               <a class="examples-link" href="">
                 <div class="examples-overlay">
-                  <img
+                  <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-4-desktop.webp 1x,
+                   ./images/portfolio/works-4-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-4-desktop.jpg 1x,
+                   ./images/portfolio/works-4-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-4-tablet.webp 1x,
+                   ./images/portfolio/works-4-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-4-tablet.jpg 1x,
+                   ./images/portfolio/works-4-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-4.webp 1x,
+                   ./images/portfolio/works-4@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-4.jpg 1x,
+                   ./images/portfolio/works-4@2x.jpg 2x"
+                />
+                <img
                     class="examples-img"
-                    src="./images/portfolio4.jpg"
+                    src="#"
                     alt="Полноразмерные наушники"
-                    width="370"
                   />
                   <p class="examples-overlay-text">
                     Технокряк это современная площадка распространения
@@ -181,11 +316,44 @@
             <li class="examples-item">
               <a class="examples-link" href="">
                 <div class="examples-overlay">
-                  <img
+                  <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-5-desktop.webp 1x,
+                   ./images/portfolio/works-5-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-5-desktop.jpg 1x,
+                   ./images/portfolio/works-5-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-5-tablet.webp 1x,
+                   ./images/portfolio/works-5-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-5-tablet.jpg 1x,
+                   ./images/portfolio/works-5-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-5.webp 1x,
+                   ./images/portfolio/works-5@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-5.jpg 1x,
+                   ./images/portfolio/works-5@2x.jpg 2x"
+                />
+                <img
                     class="examples-img"
-                    src="./images/portfolio5.jpg"
+                    src="#"
                     alt="Две коробки"
-                    width="370"
                   />
                   <p class="examples-overlay-text">
                     Технокряк это современная площадка распространения
@@ -204,11 +372,44 @@
             <li class="examples-item">
               <a class="examples-link" href="">
                 <div class="examples-overlay">
-                  <img
+                  <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-6-desktop.webp 1x,
+                   ./images/portfolio/works-6-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-6-desktop.jpg 1x,
+                   ./images/portfolio/works-6-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-6-tablet.webp 1x,
+                   ./images/portfolio/works-6-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-6-tablet.jpg 1x,
+                   ./images/portfolio/works-6-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-6.webp 1x,
+                   ./images/portfolio/works-6@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-6.jpg 1x,
+                   ./images/portfolio/works-6@2x.jpg 2x"
+                />
+                <img
                     class="examples-img"
-                    src="./images/portfolio6.jpg"
+                    src="#"
                     alt="Веб-сайт на экране монитора"
-                    width="370"
                   />
                   <p class="examples-overlay-text">
                     Технокряк это современная площадка распространения
@@ -227,11 +428,44 @@
             <li class="examples-item">
               <a class="examples-link" href="">
                 <div class="examples-overlay">
-                  <img
+                  <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-7-desktop.webp 1x,
+                   ./images/portfolio/works-7-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-7-desktop.jpg 1x,
+                   ./images/portfolio/works-7-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-7-tablet.webp 1x,
+                   ./images/portfolio/works-7-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-7-tablet.jpg 1x,
+                   ./images/portfolio/works-7-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-7.webp 1x,
+                   ./images/portfolio/works-7@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-7.jpg 1x,
+                   ./images/portfolio/works-7@2x.jpg 2x"
+                />
+                <img
                     class="examples-img"
-                    src="./images/portfolio7.jpg"
+                    src="#"
                     alt="Открытая книга с картинками"
-                    width="370"
                   />
                   <p class="examples-overlay-text">
                     Технокряк это современная площадка распространения
@@ -250,11 +484,44 @@
             <li class="examples-item">
               <a class="examples-link" href="">
                 <div class="examples-overlay">
-                  <img
+                  <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-8-desktop.webp 1x,
+                   ./images/portfolio/works-8-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-8-desktop.jpg 1x,
+                   ./images/portfolio/works-8-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-8-tablet.webp 1x,
+                   ./images/portfolio/works-8-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-8-tablet.jpg 1x,
+                   ./images/portfolio/works-8-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-8.webp 1x,
+                   ./images/portfolio/works-8@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-8.jpg 1x,
+                   ./images/portfolio/works-8@2x.jpg 2x"
+                />
+                <img
                     class="examples-img"
-                    src="./images/portfolio8.jpg"
+                    src="#"
                     alt="Ярлык"
-                    width="370"
                   />
                   <p class="examples-overlay-text">
                     Технокряк это современная площадка распространения
@@ -273,11 +540,44 @@
             <li class="examples-item">
               <a class="examples-link" href="">
                 <div class="examples-overlay">
-                  <img
+                  <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-9-desktop.webp 1x,
+                   ./images/portfolio/works-9-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/works-9-desktop.jpg 1x,
+                   ./images/portfolio/works-9-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-9-tablet.webp 1x,
+                   ./images/portfolio/works-9-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/works-9-tablet.jpg 1x,
+                   ./images/portfolio/works-9-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-9.webp 1x,
+                   ./images/portfolio/works-9@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/portfolio/works-9.jpg 1x,
+                   ./images/portfolio/works-9@2x.jpg 2x"
+                />
+                <img
                     class="examples-img"
-                    src="./images/portfolio9.jpg"
+                    src="#"
                     alt="Приложение  в котором работают на ноутбуке"
-                    width="370"
                   />
                   <p class="examples-overlay-text">
                     Технокряк это современная площадка распространения
@@ -298,78 +598,71 @@
     <!-- footer -->
     <footer class="page-footer section">
       <div class="page-footer__container container">
-        <div class="contacts">
-          <a class="logo page-footer__logo" href="./index.html"
-            >Web<span class="page-footer__logo_white">Studio</span></a
-          >
-          <address>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <a
-                  class="contacts__map"
-                  href="https://goo.gl/maps/XkNCHodQhnQYmGNX7"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="page-footer__wraper">
+          <div class="contacts">
+            <a class="logo page-footer__logo" href="./index.html"
+              >Web<span class="page-footer__logo_white">Studio</span></a
+            >
+            <address>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a
+                    class="contacts__map"
+                    href="https://goo.gl/maps/XkNCHodQhnQYmGNX7"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="join__title">Присоединяйтесь</p>
+            <ul class="social-list join__social-list">
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link_join">
+                  <svg class="join-icon" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
-                <a class="contacts__mail" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link_join">
+                  <svg class="join-icon" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
-                <a class="contacts__tel" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link_join">
+                  <svg class="join-icon" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link_join">
+                  <svg class="join-icon" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <p class="join__title">Присоединяйтесь</p>
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a href="" class="social-list__link social-list__link_join">
-                <svg class="join-icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link social-list__link_join">
-                <svg class="join-icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link social-list__link_join">
-                <svg class="join-icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link social-list__link_join">
-                <svg class="join-icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe">
           <form action="#" class="subscribe__form">
             <p class="subscribe__title">Подпишитесь на рассылку</p>
             <div class="subscribe__wrap">
               <label class="subscribe__field">
-                <input
-                  type="email"
-                  class="subscribe__input"
-                  name="user-mail"
-                  placeholder="E-mail"
-                />
+                <input type="email" class="subscribe__input" name="user-mail" placeholder="E-mail" />
               </label>
               <button class="subscribe__button" type="submit">
                 Подписаться
@@ -382,5 +675,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

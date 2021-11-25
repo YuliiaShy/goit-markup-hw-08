@@ -1,39 +1,59 @@
-// .team {
-//   background-color: var(--background-color-buttons);
-// }
+.team {
+  background-color: var(--background-color-buttons);
+}
 
-// .team__container {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.team__list {
+  @media screen and (max-width: 767px) {
+    margin-bottom: calc(-1 * var(--card-set-gap));
+  }
 
-// .team__list {
-//   display: flex;
-//   margin-right: calc(-1 * var(--card-set-gap));
-// }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 
-// .team__item {
-//   margin-right: var(--card-set-gap);
-//   flex-basis: calc(100% / 4 - var(--card-set-gap));
-//   box-shadow: 0px 1px 3px var(--box-shadow-component),
-//     0px 1px 1px var(--box-shadow-components), 0px 2px 1px var(--backdrop-rgba);
-// }
+.team__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: var(--card-set-gap);
+  }
 
-// .team__thumb {
-//   padding: var(--card-set-gap) 32px;
-//   text-align: center;
-//   background-color: var(--hero-headline-color);
-//   border-radius: 0px 0px 4px 4px;
-// }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+  }
 
-// .team__title {
-//   margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+  }
+  box-shadow: 0px 1px 3px var(--box-shadow-component), 0px 1px 1px var(--box-shadow-components),
+    0px 2px 1px var(--backdrop-rgba);
+}
 
-//   font-weight: 500;
-//   line-height: 1.2;
-//   color: var(--headline-text-color);
-// }
+.team__thumb {
+  padding: var(--card-set-gap) 122px 24px 122px;
+  text-align: center;
+  background-color: var(--hero-headline-color);
+  border-radius: 0px 0px 4px 4px;
 
-// .team__text {
-//   margin-bottom: 16px;
-// }
+  @media screen and (min-width: 768px) {
+    padding: var(--card-set-gap) 74px 24px 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: var(--card-set-gap) 32px;
+  }
+}
+
+.team__title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--headline-text-color);
+}
+
+.team__text {
+  margin-bottom: 16px;
+}
