@@ -97,8 +97,8 @@
     align-items: center;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: inherit;
     transition-property: color;
@@ -109,6 +109,33 @@
     &:focus {
       color: var(--accent-color-blue);
     }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+}
+
+.site-contacts__link_mail {
+  @media screen and (max-width: 1199px) {
+    padding-top: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.site-contacts__link_tel {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -119,8 +146,29 @@
   fill: currentColor;
 }
 
+.site-contacts__icon_mail {
+  width: 14px;
+  height: 10px;
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.site-contacts__icon_tel {
+  width: 10px;
+  height: 14px;
+
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .button-menu {
   padding: 0;
+  margin: 0;
 
   cursor: pointer;
   border: none;
