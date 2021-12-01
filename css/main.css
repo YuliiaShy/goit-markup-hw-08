@@ -629,6 +629,10 @@ a {
   }
 }
 
+.site-nav {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
@@ -640,10 +644,8 @@ a {
   margin-right: 50px;
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav__link {
-    display: none;
-  }
+.site-nav__link {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -681,7 +683,13 @@ a {
 }
 
 .site-contacts {
-  margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-contacts {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1412,25 +1420,25 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .examples-item {
+  .examples-list__item {
     margin-bottom: var(--card-set-gap);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .examples-item {
+  .examples-list__item {
     margin: 15px;
     flex-basis: calc(100% / 2 - var(--card-set-gap));
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .examples-item {
+  .examples-list__item {
     flex-basis: calc(100% / 3 - var(--card-set-gap));
   }
 }
 
-.examples-link {
+.examples-list__link {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1439,18 +1447,18 @@ a {
   transition-timing-function: var(--transition-timing-function);
 }
 
-.examples-link:hover, .examples-link:focus {
+.examples-list__link:hover, .examples-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.examples-border {
+.examples-thumb {
   flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--card-border-color);
   border-top: none;
 }
 
-.examples-title {
+.examples-thumb__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -1459,7 +1467,7 @@ a {
   color: var(--headline-text-color);
 }
 
-.examples-text {
+.examples-thumb__text {
   line-height: 1.87;
   color: var(--general-text-color);
 }
@@ -1469,7 +1477,7 @@ a {
   overflow: hidden;
 }
 
-.examples-overlay-text {
+.examples-overlay__text {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1487,8 +1495,8 @@ a {
   transition-timing-function: var(--transition-timing-function);
 }
 
-.examples-link:hover .examples-overlay-text,
-.examples-link:focus .examples-overlay-text {
+.examples-list__link:hover .examples-overlay__text,
+.examples-list__link:focus .examples-overlay__text {
   transform: translateY(0);
 }
 /*# sourceMappingURL=main.css.map */
