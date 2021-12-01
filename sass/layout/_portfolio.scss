@@ -1,4 +1,4 @@
-/* filter buttons */
+/* buttons list */
 .buttons-list {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +121,8 @@
   line-height: 1.87;
   color: var(--general-text-color);
 }
+
+/* Overlay */
 
 .examples-overlay {
   position: relative;

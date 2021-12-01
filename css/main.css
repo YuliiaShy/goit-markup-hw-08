@@ -629,8 +629,10 @@ a {
   }
 }
 
-.site-nav {
-  display: none;
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -644,8 +646,10 @@ a {
   margin-right: 50px;
 }
 
-.site-nav__link {
-  display: none;
+@media screen and (max-width: 767px) {
+  .site-nav__link {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -682,8 +686,10 @@ a {
   background-color: var(--accent-color-blue);
 }
 
-.site-contacts {
-  display: none;
+@media screen and (max-width: 767px) {
+  .site-contacts {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -735,7 +741,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .site-contacts__link {
     font-size: 14px;
     line-height: 1.14;
@@ -1343,7 +1349,7 @@ a {
   margin-left: 10px;
 }
 
-/* filter buttons */
+/* buttons list */
 .buttons-list {
   display: flex;
   flex-wrap: wrap;
@@ -1472,6 +1478,7 @@ a {
   color: var(--general-text-color);
 }
 
+/* Overlay */
 .examples-overlay {
   position: relative;
   overflow: hidden;
